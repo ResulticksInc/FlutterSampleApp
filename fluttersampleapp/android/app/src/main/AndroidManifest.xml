@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.visioneducation">
+    <uses-permission android:name= 'android.permission.INTERNET' />
+   <application
+       android:label="visioneducation"
+       android:name=".VisionEducation"
+        android:icon="@mipmap/ve_ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--  URL deep-linking-->
+                <data android:scheme="visionbank" android:host="open"/>
+
+            </intent-filter>
+
+        </activity>
+       <service
+           android:name=".MessagingService"
+           android:exported="false"
+           android:directBootAware="true"
+           tools:targetApi="n"
+           tools:ignore="Instantiatable">
+           <intent-filter>
+               <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+           </intent-filter>
+       </service>
+
+       <!-- Start  -->
+       <meta-data
+           android:name="resulticks.default_notification_icon"
+           android:resource="@mipmap/ic_app_icon" />
+       <meta-data
+           android:name="resulticks.default_notification_icon_transparent"
+           android:resource="@mipmap/ic_app_icon_transparent" />
+       <meta-data
+           android:name="resulticks.default_notification_color"
+           android:resource="@color/notificationColor" />
+       <meta-data
+           android:name="resulticks.key"
+           android:value="api_key_7def9b46-cb52-48c7-a858-5213b2cb5e72" />
+       <!-- End -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <meta-data
+           android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyAf0TobOpwQHhqM5zs_JduUkizxRbZhVsI" />
+
+
+    </application>
+</manifest>

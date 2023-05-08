@@ -1,0 +1,587 @@
+{
+  "project_info": {
+    "project_number": "335261294965",
+    "firebase_url": "https://visionbankandroid.firebaseio.com",
+    "project_id": "visionbankandroid",
+    "storage_bucket": "visionbankandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:3156aa6b4af78829c7f33c",
+        "android_client_info": {
+          "package_name": "com.flutter.sampleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:8978b412a6a6ed74",
+        "android_client_info": {
+          "package_name": "com.interakt.visionarybank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:215a1bade911d0b1",
+        "android_client_info": {
+          "package_name": "com.interakt.visionbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:da11f240f535d940c7f33c",
+        "android_client_info": {
+          "package_name": "com.interakt.visioneducation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:9c382dd8f7305ee6",
+        "android_client_info": {
+          "package_name": "com.interakt.visionentertainment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:63d50e81bf19fa47",
+        "android_client_info": {
+          "package_name": "com.interakt.visioninsurance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:23e44b45f37fc2a2",
+        "android_client_info": {
+          "package_name": "com.interakt.visionmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:7d7df8832f777cdec7f33c",
+        "android_client_info": {
+          "package_name": "com.interakt.visionmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:faab5ee40358876a",
+        "android_client_info": {
+          "package_name": "com.interakt.visionmutualfund"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:fcb79b30c8ff0bc1",
+        "android_client_info": {
+          "package_name": "com.interakt.visionretail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:ab297bf935fa4ea4c7f33c",
+        "android_client_info": {
+          "package_name": "com.interakt.visiontel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:3366fc9b82115ad9",
+        "android_client_info": {
+          "package_name": "com.interakt.visiontravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:f08c3540178af0f6c7f33c",
+        "android_client_info": {
+          "package_name": "com.resul.sdk1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:8d1410721a49fd74c7f33c",
+        "android_client_info": {
+          "package_name": "com.resul.visioneducations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:9bb1bef70f10565ec7f33c",
+        "android_client_info": {
+          "package_name": "com.resulticks.visionbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335261294965:android:c083cce84d6cea21c7f33c",
+        "android_client_info": {
+          "package_name": "com.resulticks.visiontel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv-ZHyjkf0VapSsy1hem1-q3ZvlDBMwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335261294965-rlh6b4vne8jucgkq7iu0i8f24hep1r4h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335261294965-ka54hk7jd06i2987hhgv9lkecm5imsag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.interakt.visionretail"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
