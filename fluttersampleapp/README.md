@@ -4,6 +4,8 @@
 
 ```ruby
 flutter pub get
+
+flutter run
 ```
 
 ## Android – Native code setup
