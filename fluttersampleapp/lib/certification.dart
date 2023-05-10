@@ -24,7 +24,12 @@ class _CertificationState extends State<Certification> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _refluttersdkPlugin.screentracking("CertificationPage");
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Call the system service here
+
+      _refluttersdkPlugin.screentracking("CertificationPage");
+    });
+    //_refluttersdkPlugin.screentracking("CertificationPage");
     _locationUpdate();
  }
 

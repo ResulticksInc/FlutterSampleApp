@@ -80,7 +80,11 @@ class _CarrierState extends State<Carrier> {
 void initState() {
     // TODO: implement initState
     super.initState();
-    _refluttersdkPlugin.screentracking("CarrierPage");
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Call the system service here
+      _refluttersdkPlugin.screentracking("CarrierPage");
+    });
+   // _refluttersdkPlugin.screentracking("CarrierPage");
     setUnreadNotificationCount();
 }
 

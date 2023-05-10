@@ -11,6 +11,7 @@ class NotificationPage extends StatefulWidget {
   State<NotificationPage> createState() => _NotificationPageState();
 }
 final _refluttersdkPlugin=Refluttersdk();
+
 class _NotificationPageState extends State<NotificationPage> {
   
 
@@ -151,18 +152,16 @@ class _NotificationPageState extends State<NotificationPage> {
                           SizedBox(
                             width: 5.0,
                           ),
+
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(notifyList[index]['nameValuePairs']['title'],style:TextStyle(color: Colors.black,fontSize:18.0,fontWeight: FontWeight.bold)),
+                             Text(notifyList[index]['nameValuePairs']['title'],style:TextStyle(color: Colors.black,fontSize:18.0,fontWeight: FontWeight.bold)),
                               Expanded(
-
-
                                 child: SingleChildScrollView(
                                   scrollDirection: Axis.vertical,
                                   child: Text(notifyList[index]['nameValuePairs']['body'],style:TextStyle(color: Colors.grey,fontSize:18.0,),maxLines: 10,softWrap: true,),
                                 ),
-
                               ),
                               Row(
                                 children: [

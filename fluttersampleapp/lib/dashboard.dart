@@ -118,7 +118,11 @@ initializeSharedPreference() async {
    initState(){
     super.initState();
     initializeSharedPreference();
-    _refluttersdkPlugin.screentracking("DashboardPage");
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Call the system service here
+      _refluttersdkPlugin.screentracking("DashboardPage");
+    });
+   // _refluttersdkPlugin.screentracking("DashboardPage");
   }
 
   

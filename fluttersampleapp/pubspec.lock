@@ -396,10 +396,10 @@ packages:
     dependency: "direct main"
     description:
       name: refluttersdk
-      sha256: b2d49889383a9cf9a7b90e3cf1908cfbf756ba4bce30ac32a22761aa694071ea
+      sha256: "6b8913dc776e76dca730eb4e3e3919074d387c2ac24f230ecc5df988b9b81a20"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.0.4"
   shared_preferences:
     dependency: "direct main"
     description:
