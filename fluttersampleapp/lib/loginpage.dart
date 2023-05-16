@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:refluttersdk/refluttersdk.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dashboard.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+
 
 final _refluttersdkPlugin = Refluttersdk();
 
@@ -38,7 +40,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     super.initState();
 
     // FCM
-    Firebase.initializeApp();
+   Firebase.initializeApp();
 
     initializeSharedPreference();
     // Screen Tracking
@@ -331,22 +333,40 @@ class _MyLoginPageState extends State<MyLoginPage> {
   }
 
   onResulticksUserRegister() {
-    Map userData = {
-      "userUniqueId": userId,
-      // * unique id could be email id, mobile no, or BrandID defined id like Customer hash, PAN number
-      "name": "",
-      "age": "",
-      "email": "",
-      "phone": "",
-      "gender": "",
-      "profileUrl": "",
-      "dob": "",
-      "education": "",
-      "employed": true,
-      "married": false,
-      "deviceToken": fcmToken,
-      // * FCM Token
-    };
-    _refluttersdkPlugin.sdkRegisteration(userData);
+
+    if (kIsWeb) {
+      Map userData = {
+        "useruniqueid":"visionuser@email.com",
+        "name": "<name>",
+        "age": "<age>",
+        "email": "<email>",
+        "phone": "<phone>",
+        "gender": "<gender>",
+        "profileUrl": "<profileUrl>",
+        "dateOfBirth": "<dateOfBirth>",
+      };
+
+      _refluttersdkPlugin.sdkRegisteration(userData);
+
+    }else{
+      Map userData = {
+        "userUniqueId": userId,
+        // * unique id could be email id, mobile no, or BrandID defined id like Customer hash, PAN number
+        "name": "",
+        "age": "",
+        "email": "",
+        "phone": "",
+        "gender": "",
+        "profileUrl": "",
+        "dob": "",
+        "education": "",
+        "employed": true,
+        "married": false,
+        "deviceToken": fcmToken,
+        // * FCM Token
+      };
+      _refluttersdkPlugin.sdkRegisteration(userData);
+    }
+
   }
 }

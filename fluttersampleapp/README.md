@@ -1,12 +1,6 @@
 # Flutter SDK Integration
 
-> Run the sample App using below command
 
-```ruby
-flutter pub get
-
-flutter run
-```
 
 ## Android – Native code setup
 

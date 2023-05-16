@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:visioneducation/mynavigator.dart';
@@ -60,15 +60,13 @@ class DashboardPageState extends State<DashboardPage> {
     * App screen Navigations via link and notifications
     */
     _refluttersdkPlugin.listener((data) {
-
       print("Deeplink Data :: $data") ;
-      Map<String, dynamic> parsedData = jsonDecode(data);
-      List<dynamic> customActions = jsonDecode(parsedData['customActions']);
+      var deeplinkData = jsonDecode(data);
+      var customParams = deeplinkData['customParams'];
       setState(() {
-        screenName = customActions[1]['customParams']['screenName'];
-        receivedData=customActions[1]['customParams']['data'];
+        screenName = jsonDecode(customParams)['screenName'];
+        receivedData= jsonDecode(customParams)['data'];
       });
-      print("ScreenName :: $screenName");
       screenNavigator(screenName,receivedData);
     });
 
@@ -230,11 +228,22 @@ initializeSharedPreference() async {
                           width: double.maxFinite,
                           child: ElevatedButton(onPressed: ()
                            {
-                              var eventData = {
-                                "name": "payment",
-                                "data": {"id": "6744", "price": "477"}
-                              };
-                              _refluttersdkPlugin.customEventWithData(eventData);
+
+                           if (kIsWeb) {
+                           _refluttersdkPlugin.customEvent("Payment");
+
+                           var data = { 'eventName': 'Website Open', 'eventData': 'Viewed Groceries', 'pId':123, 	};
+                           	_refluttersdkPlugin.customEventWithData(data);
+                           }
+                           else{
+                             var eventData = {
+                               "name": "payment",
+                               "data": {"id": "6744", "price": "477"}
+                             };
+                             _refluttersdkPlugin.customEventWithData(eventData);
+                           }
+
+
 
                           }, child: Text("Custom event"),
 

@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:visioneducation/loginpage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:refluttersdk/refluttersdk.dart';
 import 'notification.dart';
 
 void main() async{
@@ -10,6 +11,7 @@ void main() async{
   runApp(MyApp(title: 'Vision Education',));
 }
 
+final _refluttersdkPlugin = Refluttersdk();
 class MyApp extends StatefulWidget {
   const MyApp({Key? key, required String title}) : super(key: key);
 
@@ -26,6 +28,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState(){
     super.initState();
+    _refluttersdkPlugin.initWebSDK("./firebase-messaging-sw.js");
+
   }
   @override
   Widget build(BuildContext context) {
