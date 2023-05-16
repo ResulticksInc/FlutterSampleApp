@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:refluttersdk/refluttersdk.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -40,7 +40,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     super.initState();
 
     // FCM
-   Firebase.initializeApp();
+   // Firebase.initializeApp();
 
     initializeSharedPreference();
     // Screen Tracking
@@ -54,14 +54,13 @@ class _MyLoginPageState extends State<MyLoginPage> {
     });
 
     // Getting FCM Token
-    FirebaseMessaging.instance.getToken().then((newToken) {
-      print("FCM token: $newToken ");
-      shared.setString("fcmToken", newToken!);
-      setState(() {
-        fcmToken = newToken;
-      });
-
-    });
+    // FirebaseMessaging.instance.getToken().then((newToken) {
+    //   print("FCM token: $newToken ");
+    //   shared.setString("fcmToken", newToken!);
+    //   setState(() {
+    //     fcmToken = newToken;
+    //   });
+    // });
 
     // User Login validations
     isLoggedIn();
@@ -319,14 +318,14 @@ class _MyLoginPageState extends State<MyLoginPage> {
         _refluttersdkPlugin.updatePushToken(fcmToken);
        } else {
       // Getting FCM Token
-      FirebaseMessaging.instance.getToken().then((newToken) {
-        print("FCM token: $newToken ");
-        shared.setString("fcmToken", newToken!);
-        setState(() {
-          fcmToken = newToken;
-        });
-        _refluttersdkPlugin.updatePushToken(fcmToken);
-      });
+      // FirebaseMessaging.instance.getToken().then((newToken) {
+      //   print("FCM token: $newToken ");
+      //   shared.setString("fcmToken", newToken!);
+      //   setState(() {
+      //     fcmToken = newToken;
+      //   });
+      //   _refluttersdkPlugin.updatePushToken(fcmToken);
+      // });
 
      }
 

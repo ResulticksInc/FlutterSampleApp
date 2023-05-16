@@ -8,6 +8,8 @@ import 'carrier.dart';
 import 'certification.dart';
 import 'notification.dart';
 import 'package:refluttersdk/refluttersdk.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 final _refluttersdkPlugin = Refluttersdk();
 
@@ -25,7 +27,7 @@ class _MyApppState extends State<MyAppp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/Carrier': (BuildContext ctx) => const Carrier(),
+        '/Carrier?resulid=OCtMHxLM218V058UF9ENEMyOTY5QXwxSg==&utm_source=SmartDx&utm_medium=wp&utm_campaign=RH_WEB_ET_CHECK_K3m': (BuildContext ctx) => const Carrier(),
         "/Certification": (BuildContext ctx) => const Certification(),
       },
       debugShowCheckedModeBanner: false,
@@ -81,6 +83,7 @@ class DashboardPageState extends State<DashboardPage> {
 
       case "Carrier":{
         if(data!=null){
+
           Navigator.pushNamed(context, '/Carrier',arguments: data);
         }
         else
@@ -279,8 +282,9 @@ initializeSharedPreference() async {
                         child: Container(
                           width: double.maxFinite,
                           child: ElevatedButton(onPressed: () async {
-                            Navigator.pushReplacement(context,
-                                MaterialPageRoute(builder: (context) => const Carrier()));
+                            // Navigator.pushReplacement(context,
+                            //     MaterialPageRoute(builder: (context) => const Carrier()));
+                            Navigator.of(context).pushNamed('/Carrier?resulid=OCtMHxLM218V058UF9ENEMyOTY5QXwxSg==&utm_source=SmartDx&utm_medium=wp&utm_campaign=RH_WEB_ET_CHECK_K3m');
                           }, child: Text("Page 2"),
 
                           ),
