@@ -1,11 +1,11 @@
 import 'dart:async';
-// import 'package:firebase_core/firebase_core.dart';
-// import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_messaging/firebase_messaging.dart' if (dart.library.io) 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_core/firebase_core.dart' if (dart.library.io) 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:refluttersdk/refluttersdk.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dashboard.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 
 
 final _refluttersdkPlugin = Refluttersdk();
@@ -38,10 +38,8 @@ class _MyLoginPageState extends State<MyLoginPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
     // FCM
    // Firebase.initializeApp();
-
     initializeSharedPreference();
     // Screen Tracking
     _refluttersdkPlugin.screentracking("LoginPage");
@@ -52,15 +50,17 @@ class _MyLoginPageState extends State<MyLoginPage> {
     setState(() {
       userId = shared.getString("userId").toString();
     });
+    if (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS){
+      // Getting FCM Token
+      FirebaseMessaging.instance.getToken().then((newToken) {
+        print("FCM token: $newToken ");
+        shared.setString("fcmToken", newToken!);
+        setState(() {
+          fcmToken = newToken;
+        });
+      });
 
-    // Getting FCM Token
-    // FirebaseMessaging.instance.getToken().then((newToken) {
-    //   print("FCM token: $newToken ");
-    //   shared.setString("fcmToken", newToken!);
-    //   setState(() {
-    //     fcmToken = newToken;
-    //   });
-    // });
+    }
 
     // User Login validations
     isLoggedIn();
@@ -272,7 +272,6 @@ class _MyLoginPageState extends State<MyLoginPage> {
         ));
   }
 
-
   loginValidation()
   {
      // Reading the values from the UI
@@ -298,11 +297,9 @@ class _MyLoginPageState extends State<MyLoginPage> {
         });
         return ;
      }
-
      // Data stored
      shared.setString("userId", userId);
      shared.setBool("login", true);
-
      // Resulticks User register
      onResulticksUserRegister();
 
@@ -318,33 +315,34 @@ class _MyLoginPageState extends State<MyLoginPage> {
         _refluttersdkPlugin.updatePushToken(fcmToken);
        } else {
       // Getting FCM Token
-      // FirebaseMessaging.instance.getToken().then((newToken) {
-      //   print("FCM token: $newToken ");
-      //   shared.setString("fcmToken", newToken!);
-      //   setState(() {
-      //     fcmToken = newToken;
-      //   });
-      //   _refluttersdkPlugin.updatePushToken(fcmToken);
-      // });
+      if (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS){
+        FirebaseMessaging.instance.getToken().then((newToken) {
+          print("FCM token: $newToken ");
+          shared.setString("fcmToken", newToken!);
+          setState(() {
+            fcmToken = newToken;
+          });
+          _refluttersdkPlugin.updatePushToken(fcmToken);
+        });
+
+      }
 
      }
 
   }
 
   onResulticksUserRegister() {
-
     if (kIsWeb) {
       Map userData = {
-        "useruniqueid":"visionuser@email.com",
+        "userUniqueId":"visionuser@email.com",
         "name": "<name>",
         "age": "<age>",
         "email": "<email>",
         "phone": "<phone>",
         "gender": "<gender>",
         "profileUrl": "<profileUrl>",
-        "dateOfBirth": "<dateOfBirth>",
+        "dateOfBirth": "<dob>",
       };
-
       _refluttersdkPlugin.sdkRegisteration(userData);
 
     }else{

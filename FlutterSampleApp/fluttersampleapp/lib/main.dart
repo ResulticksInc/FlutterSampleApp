@@ -1,13 +1,16 @@
-// import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart' if (dart.library.io) 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:visioneducation/loginpage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:refluttersdk/refluttersdk.dart';
-import 'notification.dart';
 
-void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+
+void main() async{
+  if (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS) {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+  }
   runApp(MyApp(title: 'Vision Education',));
 }
 
@@ -28,7 +31,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState(){
     super.initState();
-    _refluttersdkPlugin.initWebSDK("./firebase-messaging-sw.js");
+    _refluttersdkPlugin.initWebSDK("./sw.js");
   }
   @override
   Widget build(BuildContext context) {

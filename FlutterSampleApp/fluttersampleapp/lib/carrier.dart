@@ -81,11 +81,10 @@ void initState() {
     // TODO: implement initState
     super.initState();
     _refluttersdkPlugin.appConversion();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      // Call the system service here
-      _refluttersdkPlugin.screentracking("CarrierPage");
-    });
-   // _refluttersdkPlugin.screentracking("CarrierPage");
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   // Call the system service here
+    //   _refluttersdkPlugin.screentracking("CarrierPage");
+    // });_refluttersdkPlugin.screentracking("CarrierPage");
     setUnreadNotificationCount();
 }
 
@@ -111,7 +110,7 @@ void initState() {
               color: Colors.transparent,
               child:  SizedBox(
                 height: 20,
-                width: 215,
+                width: 224,
               ),
             ),
             Stack(

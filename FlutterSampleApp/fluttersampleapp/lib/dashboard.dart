@@ -8,7 +8,6 @@ import 'carrier.dart';
 import 'certification.dart';
 import 'notification.dart';
 import 'package:refluttersdk/refluttersdk.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 
 final _refluttersdkPlugin = Refluttersdk();
@@ -119,11 +118,11 @@ initializeSharedPreference() async {
    initState(){
     super.initState();
     initializeSharedPreference();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      // Call the system service here
-      _refluttersdkPlugin.screentracking("DashboardPage");
-    });
-   // _refluttersdkPlugin.screentracking("DashboardPage");
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   // Call the system service here
+    //   _refluttersdkPlugin.screentracking("DashboardPage");
+    // });
+    _refluttersdkPlugin.screentracking("DashboardPage");
   }
 
   

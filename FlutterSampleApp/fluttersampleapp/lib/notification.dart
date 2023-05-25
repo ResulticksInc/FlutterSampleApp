@@ -63,7 +63,7 @@ class _NotificationPageState extends State<NotificationPage> {
               color: Colors.transparent,
               child:  SizedBox(
                 height: 20,
-                width: 170,
+                width: 181,
               ),
             ),
             Stack(
