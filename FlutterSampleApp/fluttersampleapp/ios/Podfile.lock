@@ -69,7 +69,7 @@ PODS:
   - refluttersdk (0.0.1):
     - Flutter
     - REIOSSDK_5f7a2e8e_1bdb_4739_9d28_278a2759394c
-  - REIOSSDK_5f7a2e8e_1bdb_4739_9d28_278a2759394c (3.0.5):
+  - REIOSSDK_5f7a2e8e_1bdb_4739_9d28_278a2759394c (3.0.6):
     - Firebase/DynamicLinks
   - shared_preferences_foundation (0.0.1):
     - Flutter
